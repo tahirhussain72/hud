@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hud</title>
-    
+      <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
     <!-- fontaesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/assets/style.css">
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+   
+
 </head>
 <body>
 
@@ -128,12 +130,35 @@
         <h1>
             HUD is lunching a new highly comfartable, itching and sweating free
             fabricated products for your daily personal use.
+          
         </h1>
         <div class="product-title">
-            <h3>Explore collection</h3>
+            <h3>Explore collection   <div class="swiper-button-next"><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_179_396)">
+                <path d="M15 5.49902L13.59 6.90902L18.17 11.499H2V13.499H18.17L13.58 18.089L15 19.499L22 12.499L15 5.49902Z" fill="#111111"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_179_396">
+                <rect width="24" height="24" fill="white" transform="translate(0 0.499023)"/>
+                </clipPath>
+                </defs>
+                </svg> </div>
+                <div class="swiper-button-prev"><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_179_397)">
+                    <path d="M9 5.49902L10.41 6.90902L5.83 11.499H22V13.499H5.83L10.42 18.089L9 19.499L2 12.499L9 5.49902Z" fill="#111111"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_179_397">
+                    <rect width="24" height="24" fill="white" transform="matrix(-1 0 0 1 24 0.499023)"/>
+                    </clipPath>
+                    </defs>
+                    </svg> </div></h3>
         </div>
-        <div class="products swiper mySwiper">
-            <div class="swiper-wrapper">
+
+
+
+        <div class="swiper mySwiper">
+            <div class="products swiper-wrapper">
             <div class="product swiper-slide">
                 <div class="product-img">
                     <img src="./assets/images/hand6" alt="hand">
@@ -141,7 +166,14 @@
                 <p class="product-dec">HUD SweatGuard Liner™️</p>
                 <p class="product-price">329 SEK</p>
             </div>
-            <div class="product swiper-slide black-product">
+            <div class="product swiper-slide">
+                <div class="product-img">
+                    <img src="./assets/images/hand6" alt="hand">
+                </div>
+                <p class="product-dec">HUD SweatGuard Liner™️</p>
+                <p class="product-price">329 SEK</p>
+            </div>
+            <div class="product swiper-slide">
                 <div class="product-img">
                     <img src="./assets/images/hand6" alt="hand">
                 </div>
@@ -164,10 +196,7 @@
             </div>
             </div>
 
-    
-            
         </div> 
-        <div class="swiper-pagination"></div>
     
     </div>
 </div>
@@ -198,29 +227,122 @@
                 <span>rated us 5.0 <img src="/assets/images/star.png" alt="">
                 </span>
             </div>
+            
         </div>
-        <div class="review-section">
-            <img src="/assets/images/double-quote.png" alt="">
-            <p>Big problems with chapped hands and hand eczema before, now I avoid itching, sweating and moisture.
-            <!-- </div> --> <br><br>
-                HUD is really cool and comfortable fit. I ain’t feeling any itching and sweating since starts using it</p>
-                <div class="user-review">
-                    <div class="review-img">
-                        <img src="/assets/images/review-img.png" alt="">
+        <div class="review-slider">
+            <div class="review-section">
+                <img src="/assets/images/double-quote.png" alt="">
+                <p>Big problems with chapped hands and hand eczema before, now I avoid itching, sweating and moisture.
+                <!-- </div> --> <br><br>
+                    HUD is really cool and comfortable fit. I ain’t feeling any itching and sweating since starts using it</p>
+                    <div class="user-review">
+                        <div class="review-img">
+                            <img src="/assets/images/review-img.png" alt="">
+                        </div>
+                    <div class="user-detail">
+                        <p>Emilia A</p>
+                        <p class="user-name">Party Chef</p>
                     </div>
-                   <div>
-                    <p>Emilia A</p>
-                    <p>Party Chef</p>
-                   </div>
-                </div>
+                    </div>
+            </div>
+            <div class="review-section">
+                <img src="/assets/images/double-quote.png" alt="">
+                <p>Big problems with chapped hands and hand eczema before, now I avoid itching, sweating and moisture.
+                <!-- </div> --> <br><br>
+                    HUD is really cool and comfortable fit. I ain’t feeling any itching and sweating since starts using it</p>
+                    <div class="user-review">
+                        <div class="review-img">
+                            <img src="/assets/images/review-img.png" alt="">
+                        </div>
+                    <div class="user-detail">
+                        <p>Emilia A</p>
+                        <p class="user-name">Party Chef</p>
+                    </div>
+                    </div>
+            </div>
+            <div class="review-section">
+                <img src="/assets/images/double-quote.png" alt="">
+                <p>Big problems with chapped hands and hand eczema before, now I avoid itching, sweating and moisture.
+                <!-- </div> --> <br><br>
+                    HUD is really cool and comfortable fit. I ain’t feeling any itching and sweating since starts using it</p>
+                    <div class="user-review">
+                        <div class="review-img">
+                            <img src="/assets/images/review-img.png" alt="">
+                        </div>
+                    <div class="user-detail">
+                        <p>Emilia A</p>
+                        <p class="user-name">Party Chef</p>
+                    </div>
+                    </div>
+            </div>
         </div>
-        
     </div>
 </div>
-<script src="/assets/index.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+<!-- update and news  -->
+
+<div class="news-wrapper">
+    <div class="container">
+        <h2>HUD updates & news</h2>
+        
+       
+            <div class="news-update ">
+            <div class="news ">
+                <div class="news-img">
+                    <img src="./assets/images/cleaning.png" alt="hand">
+                    
+                </div>
+                <p class="news-dec">Gloves & sweat - a potential source of reduced quality of life</p>
+                
+            </div>
+            <div class="news ">
+                <div class="news-img">
+                    <img src="./assets/images/up-hand.png" alt="hand">
+                   
+                </div>
+                <p class="news-dec">New liner glove revolutionizes moisture transport and fit</p>
+                
+            </div>
+            <div class="news ">
+                <div class="news-img">
+                    <img src="./assets/images/news-img.png" alt="hand">  
+                </div>
+                <p class="news-dec">Everything you need to know about hand eczema</p>   
+            </div>        
+            </div>
+    </div>
+</div>
+
+
+<!-- frequently asked question  -->
+
+
+<div class="question-wrapper">
+    <div class="container">
+        <h2>Frequently asked questions</h2>
+        <div class="how-to-work">
+            <div>
+                <h4>How does it work?</h4>
+            </div>
+            <div>
+                <p><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_179_433)">
+                    <path d="M28.5 19.5H7.5V16.5H28.5V19.5Z" fill="#111111"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_179_433">
+                    <rect width="36" height="36" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg> </p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
+<!-- swiperslider, -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <!-- custom js -->
 <script src="./assets/js/script.js"></script>
 </body>
