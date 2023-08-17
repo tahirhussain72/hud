@@ -803,7 +803,7 @@ dd{
   /* width: 100%; */
   border-radius: 100px 100px 0px 0px;
   background: #000;     
-  border-bottom: 1px solid rgba(108, 108, 108, 0.518);  
+ 
 }
 .footer-img-section{
   padding-top: 80px;
@@ -844,6 +844,7 @@ outline: none;
 .footer-items{
   display: flex;
   margin-top: 50px;
+  border-bottom: 1px solid rgba(108, 108, 108, 0.518);  
 }
 .footer-items .left-item img{
   width: 80px;
@@ -955,10 +956,19 @@ padding: 10px 17px;
 }
 .copy-rights{
   display: flex;
-
+  justify-content: space-between;
   
 }
-/* .copy-rights p{
+
+.copy-rights p{
   margin: 14px 0;
-} */
+  color: #FFF;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+  letter-spacing: -0.28px; 
+  opacity: 0.5;
+}
 
