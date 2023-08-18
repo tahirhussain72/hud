@@ -439,56 +439,59 @@ img {
   top: 50%;
   left: 90%;
 }
-/* try product, */
-.try-product {
-  border-radius: 48px;
-  background: #e5e5e5;
-  padding: 0;
-}
-.try-product .wrapper-try-product {
+
+
+
+
+
+
+
+/* your hand protective  */
+.try-product{
+  /* height: 300px; */
   display: flex;
-  align-items: center;
-  height: 550px;
   justify-content: space-between;
+  align-items: center;
+  border-radius: 48px;
+  background: #E5E5E5;
+  /* background-color: red;  */
 }
-.try-product .wrapper-try-product .product-content {
-  width: 50%;
-  margin-left: 40;
+.product-text{
+  padding: 0px 49px;
 }
-.try-product .wrapper-try-product .product-content > h2 {
-  max-width: 400px;
+.product-text h2{
+  width: 443px; 
   color: #111;
   font-family: Inter;
   font-size: 48px;
   font-style: normal;
   font-weight: 500;
-  line-height: 68px; /* 141.667% */
-  letter-spacing: -3.36px;
-  padding-bottom: 40px;
-  padding-left: 18px;
+  line-height: 68px; 
+  letter-spacing: -3.36px; 
 }
-.try-product .wrapper-try-product .product-content button {
+.product-btn{
+  margin-top: 30px;
+  display: inline-flex;
   padding: 15px 20px;
-  outline: none;
+  justify-content: center;
+  align-items: center;
   border: none;
-  background-color: #111;
+  outline: none;
   color: #fff;
-  margin-left: 18px;
+  background: #111; 
+  gap: 10px; 
 }
-.try-product .wrapper-try-product .product-img {
-  /* height: 550px; */
+
+.product-img{
   height: 100%;
-  width: 50%;
 }
-.try-product .wrapper-try-product .product-img img {
-  border-radius: 48px;
-  object-fit: contain;
+.product-img > img{
+  border-top-right-radius: 48px;
+  border-bottom-right-radius: 48px;
 }
-.product:hover {
-  background: #111;
-  color: #fff;
-  transition: 0.5s ease;
-}
+
+
+
 
 /* about people */
 .about-people-wrapper {
@@ -511,7 +514,7 @@ img {
   font-size: 80px;
   font-style: normal;
   font-weight: 500;
-  line-height: 90px; /* 100% */
+  line-height: 90px; 
   letter-spacing: -5.4px;
 }
 .people-review {
@@ -522,7 +525,6 @@ img {
 }
 .people-review p {
   color: #fff;
-  /* text-align: end; */
   font-family: Inter;
   font-size: 22px;
   font-style: normal;
@@ -531,12 +533,12 @@ img {
 }
 .people-review span {
   color: #fff;
-  /* text-align: end; */
+ 
   font-family: Inter;
   font-size: 22px;
   font-style: normal;
   font-weight: 500;
-  line-height: 38px; /* 118.75% */
+  line-height: 38px; 
   letter-spacing: -2.24px;
 }
 .people-review img {
@@ -558,7 +560,6 @@ img {
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
-  /* 150% */
   letter-spacing: -1.4px;
 }
 .user-review {
@@ -572,15 +573,15 @@ img {
 }
 .review-img img {
   border-radius: 50%;
-  /* object-fit: cover; */
+ 
   width: 100%;
   height: 100%;
 }
-.review-slider {
+/* .review-slider {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 .user-detail {
   padding-left: 20px;
 }
@@ -588,12 +589,52 @@ img {
   font-size: 13px;
 }
 
+.what-people{
+  width: 100%;
+  min-height: 50px;
+  position: relative;
+}
+
+.what-people svg{
+  fill: white;
+  filter: brightness(0) invert(1);
+}
+
+.what-people .swiper-button-next2{
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  /* top: 50%; */
+}
+
+.what-people .swiper-button-prev2{
+  position: absolute;
+  right: 5%;
+  cursor: pointer;
+}
+
+.swiper-button-prev2.swiper-button-disabled {
+  opacity: .35;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.swiper-button-next2.swiper-button-disabled {
+  opacity: .35;
+  cursor: auto;
+  pointer-events: none;
+}
+
 /* ************* news and update start here **********  */
 .news-wrapper {
-  display: flex;
-
+  /* display: flex; */
   background: #fff8e7;
   margin-top: 80px;
+}
+
+.news-wrapper .container{
+  position: relative;
+
 }
 .news-wrapper .container h2 {
   color: #111;
@@ -602,23 +643,22 @@ img {
   font-size: 65px;
   font-style: normal;
   font-weight: 700;
-  line-height: 75px; /* 115.385% */
+  line-height: 75px;
   letter-spacing: -3.9px;
-  padding-top: 40px;
+  padding: 40px 0;
 }
 .news-wrapper .news-update {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
+  /* display: flex; */
+  /* gap: 20px; */
+  /* justify-content: center; */
 }
 .news {
-  max-width: 333px;
+  /* max-width: 333px; */
 }
 .news .news-img {
-  /* width: 452px; */
-  height: 378px;
-  margin-top: 40px;
-  padding: 20px 0px;
+  width: 100%;
+  aspect-ratio: 1/1;
+  /* padding: 20px 0px; */
 }
 .news .news-dec {
   width: 300px;
@@ -627,8 +667,37 @@ img {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30px; /* 125% */
+  line-height: 30px; 
   letter-spacing: -1.44px;
+  padding: 20px 0 10px;
+}
+.news-wrapper .swiper-button-next3,
+.news-wrapper .swiper-button-prev3{
+  position: absolute;
+  top: 55%;
+  /* transform: ; */
+}
+
+.news-wrapper .swiper-button-next3{
+  right: -2%;
+  cursor: pointer;
+}
+
+.news-wrapper .swiper-button-prev3{
+  left: -2%;
+  cursor: pointer;
+}
+
+.swiper-button-prev3.swiper-button-disabled {
+  opacity: .35;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.swiper-button-next3.swiper-button-disabled {
+  opacity: .35;
+  cursor: auto;
+  pointer-events: none;
 }
 
 /* frequently asked question  */
@@ -645,7 +714,7 @@ img {
   font-style: normal;
   font-weight: 500;
   padding: 40px 0;
-  line-height: 90px; /* 100% */
+  line-height: 90px; 
   letter-spacing: -5.4px;
 }
 .how-to-work {
@@ -660,7 +729,7 @@ img {
   font-size: 38px;
   font-style: normal;
   font-weight: 500;
-  line-height: 38px; /* 100% */
+  line-height: 38px; 
   letter-spacing: -1.52px;
 }
 .how-to-work p {
@@ -685,7 +754,7 @@ img {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px; 
   letter-spacing: -0.64px;
   margin-left: 20px;
 }
@@ -697,22 +766,7 @@ l {
   width: 60vw;
   margin: 4em auto;
 }
-/* 
-dt{
-    cursor: pointer;
-    font-weight: 300;
-    font-size: 1.5em;
-    padding: 1em 1em;
-    background: #E5E5E5; 
-    border-bottom: 1px solid rgba(108, 108, 108, 0.518);
-    border-top: 1px solid rgba(108, 108, 108, 0.518);
-}
 
-dd{
-    margin: 0;
-    padding: 2em;
-    background: #E5E5E5; 
-} */
 
 .accordion,
 .accordion * {
@@ -942,7 +996,7 @@ color: #666;
 position: relative;
 }
 .subscribe input[type="text" ]{
-  min-width: 300px;
+  /* min-width: 300px; */
 }
 .subscribe input[type="submit" ]{
   background-color: #e5e5e5;
@@ -972,3 +1026,16 @@ padding: 10px 17px;
   opacity: 0.5;
 }
 
+
+
+
+/* media query start here  */
+
+ /* @media screen and (max-width: 992px) {
+  .main-content .hero-content h1{
+    width: 480px;
+    font-size: 90px;
+    font-weight: 500;
+    line-height: 80px;
+  }
+}  */

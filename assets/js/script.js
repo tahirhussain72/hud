@@ -17,6 +17,44 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+var swiper2 = new Swiper(".mySwiper2", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  keyboard: {
+    enabled: true,
+  },
+  grid: {
+    column: 3,
+  },
+  pagination: {
+    // el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next2",
+    prevEl: ".swiper-button-prev2",
+  },
+});
+
+var swiper3 = new Swiper(".mySwiper3", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  keyboard: {
+    enabled: true,
+  },
+  // grid: {
+  //   column: 3,
+  // },
+  pagination: {
+    // el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next3",
+    prevEl: ".swiper-button-prev3",
+  },
+});
+
 
 
 
